@@ -19,6 +19,8 @@ activate :robots,
   :rules => [{:user_agent => '*', :allow => %w(/)}],
   :sitemap => '#{config[:url_root]}/sitemap.xml'
 
+Time.zone = "Pacific Time (US & Canada)"
+
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   blog.prefix = "posts"
