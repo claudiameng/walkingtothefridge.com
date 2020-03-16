@@ -26,7 +26,7 @@ GEM
       http_parser.rb (~> 0.6.0)
     erubis (2.7.0)
     eventmachine (1.2.7)
-    excon (0.66.0)
+    excon (0.72.0)
     execjs (2.7.0)
     fast_blank (1.0.0)
     fastimage (2.1.7)
@@ -38,9 +38,9 @@ GEM
       fog-json (~> 1.1)
       fog-xml (~> 0.1)
       ipaddress (~> 0.8)
-    fog-core (2.1.2)
+    fog-core (2.2.0)
       builder
-      excon (~> 0.58)
+      excon (~> 0.71)
       formatador (~> 0.2)
       mime-types
     fog-json (1.2.0)
@@ -138,13 +138,13 @@ GEM
       rouge (~> 2.0)
     middleman-vcs-time (0.0.5)
       middleman-core (~> 4.0)
-    mime-types (3.2.2)
+    mime-types (3.3.1)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2019.0331)
+    mime-types-data (3.2019.1009)
     mini_portile2 (2.4.0)
     minitest (5.14.0)
-    multi_json (1.13.1)
-    nokogiri (1.10.4)
+    multi_json (1.14.1)
+    nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
     padrino-helpers (0.13.3.4)
       i18n (~> 0.6, >= 0.6.7)
@@ -183,6 +183,7 @@ PLATFORMS
 
 DEPENDENCIES
   builder (~> 3.0)
+  excon (>= 0.71.0)
   fastimage
   middleman (~> 4.2)
   middleman-autoprefixer (~> 2.7)
@@ -196,6 +197,7 @@ DEPENDENCIES
   middleman-search_engine_sitemap (= 1.4.0)
   middleman-syntax (= 3.0.0)
   middleman-vcs-time (= 0.0.5)
+  nokogiri (>= 1.10.8)
   redcarpet (~> 3.3, >= 3.3.3)
   tzinfo-data
   wdm (~> 0.1)
