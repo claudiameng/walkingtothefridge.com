@@ -16,9 +16,7 @@ A blog because coronavirus.
 
 <% page_articles.each_with_index do |article, i| %>
   <h2><%= link_to article.title, article %> <span><%= article.date.strftime('%B %e') %></span></h2>
-  <!-- use article.summary(250) if you have Nokogiri available to show just
-       the first 250 characters -->
-  <%= article.body %>
+  <%= article.summary(200000) %>
 <% end %>
 
 <% if paginate %>
@@ -28,3 +26,6 @@ A blog because coronavirus.
 <% end %>
 
 <!-- wealth time threshold -->
+<!-- perfect thing and imperfect speech and debate -->
+<!-- things align and things don't align -->
+<!-- single member llc -->
