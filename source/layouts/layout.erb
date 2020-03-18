@@ -6,6 +6,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
+    <div style="height: 1em"></div>
     <title>Walking to the fridge<%= ' - ' + current_article.title unless current_article.nil? %></title>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
     <%= stylesheet_link_tag "site" %>
@@ -13,31 +14,58 @@
   </head>
   <body>
 
-    <div id="main" role="main">
+    <div id="main" role="main" style="margin-left: 18%; margin-right: 18%">
+
+      <% if not current_article.nil? %>
+
+        <h3><a href='<%= url_for '../index.html' %>'>[home]</a></h3>
+        <h1><%=current_article.title unless current_article.nil? %></h1>
+        
+        <%=current_article.date.strftime('%B %e') unless current_article.nil? %>
+        <br>
+        Tags:
+        <% current_article.tags.each_with_index do |tag, index| %>
+          <% if index == current_article.tags.length - 1 %>
+            <%= tag %>
+          <% else %>
+            <%= tag %>, 
+          <% end %>
+        <% end %>
+
+      <% end %>
+
       <%= yield %>
+
+      <div style="height: 2em"></div>
+
+      <aside>
+        <h2>Recent articles</h2>
+        <ol>
+          <% blog.articles[0...10].each do |article| %>
+            <li><%= link_to article.title, article %> <span><%= article.date.strftime('%B %e') %></span></li>
+          <% end %>
+        </ol>
+
+        <h2>Tags</h2>
+        <ol>
+          <% blog.tags.each do |tag, articles| %>
+            <li><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></li>
+          <% end %>
+        </ol>
+
+        <h2>By year</h2>
+        <ol>
+          <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
+            <li><%= link_to "#{year} (#{articles.size})", blog_year_path(year) %></li>
+          <% end %>
+        </ol>
+      </aside>
+
+      <div style="height: 5em"></div>
+      <!-- &copy; 2020 -->
+      <div style="height: 5em"></div>
+      
     </div>
 
-    <aside>
-      <h2>Recent Articles</h2>
-      <ol>
-        <% blog.articles[0...10].each do |article| %>
-          <li><%= link_to article.title, article %> <span><%= article.date.strftime('%B %e') %></span></li>
-        <% end %>
-      </ol>
-
-      <h2>Tags</h2>
-      <ol>
-        <% blog.tags.each do |tag, articles| %>
-          <li><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></li>
-        <% end %>
-      </ol>
-
-      <h2>By Year</h2>
-      <ol>
-        <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
-          <li><%= link_to "#{year} (#{articles.size})", blog_year_path(year) %></li>
-        <% end %>
-      </ol>
-    </aside>
   </body>
 </html>

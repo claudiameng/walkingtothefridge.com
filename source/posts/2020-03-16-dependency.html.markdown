@@ -6,7 +6,9 @@ tags: claudia
 
 ---
 
-They say that quitting smoking is hard. I would digress, and add that quitting people is harder. I don't mean specific people (think: toxic relationship), although that is certainly separately true as well. I mean People with a capital P. Read: the amorphous idea of having found your people. Of being in a context where you feel safe and loved and understood. Or perhaps the hierarchy of needs is loved
+They say that quitting smoking is hard. I would digress, and add that quitting people is harder. I don't mean specific people (think: toxic relationship), although that is certainly separately true as well. I mean People with a capital P. Read: the amorphous idea of having found your people. Of being in a context where you feel safe and loved and understood. Or perhaps the hierarchy of needs is
+
+loved
 
 <span style="display:inline-block; width: 3em;"></span>and understood
 

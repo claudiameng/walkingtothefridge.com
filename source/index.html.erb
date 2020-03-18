@@ -3,8 +3,10 @@ pageable: true
 per_page: 10
 ---
 
-<h1>Walking to the fridge</h1>
+<h1 style='margin-bottom: .35em'>Walking to the fridge</h1>
 A blog because coronavirus.
+<a href='mailto:claudia.meng@yale.edu,zhengdong@yale.edu?subject=[Walking%20to%20the%20fridge]%20'>[Contact]</a>
+<div style="height: 2.5em"></div>
 
 <% if paginate && num_pages > 1 %>
   <p>Page <%= page_number %> of <%= num_pages %></p>
@@ -15,8 +17,21 @@ A blog because coronavirus.
 <% end %>
 
 <% page_articles.each_with_index do |article, i| %>
+
+  <% if i == 0 %>
+    <hr>
+    <div style="height: 0em"></div>
+  <% end %>
+
   <h2><%= link_to article.title, article %> <span><%= article.date.strftime('%B %e') %></span></h2>
-  <%= article.summary(200000) %>
+  <%= article.summary(5000) %>
+  <div style="width: 100%; padding-bottom: 1em">
+    <a style="float: right" href="<%= article.url %>">Read more...</a>
+  </div>
+  <div style="height: 1em"></div>
+  <hr>
+  <div style="height: 0em"></div>
+
 <% end %>
 
 <% if paginate %>
@@ -25,7 +40,20 @@ A blog because coronavirus.
   <% end %>
 <% end %>
 
-<!-- wealth time threshold -->
 <!-- perfect thing and imperfect speech and debate -->
 <!-- things align and things don't align -->
 <!-- single member llc -->
+<!-- Consistently bad < sometimes < consistently good but consistency > all -->
+<!-- latte art progression -->
+<!-- feedly what i read -->
+<!-- truth and beauty -->
+<!-- cooking -->
+<!-- fulbright -->
+<!-- ag -->
+<!-- percent time with parents, now at home extra 2 months -->
+
+<!-- rss -->
+<!-- secure site -->
+<!-- summaries -->
+<!-- popular / curated posts -->
+<!-- google analytics -->
