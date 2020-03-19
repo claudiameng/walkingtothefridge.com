@@ -21,7 +21,7 @@
         <h3><a href='<%= url_for '../index.html' %>'>[home]</a></h3>
         <h1><%=current_article.title unless current_article.nil? %></h1>
         
-        <%=current_article.date.strftime('%B %e') unless current_article.nil? %>
+        <%=current_article.date.strftime('%B %e %Y %H:%M %Z') unless current_article.nil? %>
         <br>
         Tags:
         <% current_article.tags.each_with_index do |tag, index| %>
