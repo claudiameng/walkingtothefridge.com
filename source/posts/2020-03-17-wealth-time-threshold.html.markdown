@@ -64,7 +64,7 @@ Annually, $53,600. Looking at this number I already feel wasteful imagining this
 
 The math to calculate how much principal I need is straightforward by comparison. I'll conservatively estimate an annual return of 5 percent on investments, and a withdrawal rate of 4 percent. My principal will grow 1 percent annually.
 
-Then there is the matter of taxation. Where earlier we might have wished to live outside the United States to save on health insurance, now we're saved by taxes. In 2020 the <a href=https://www.nerdwallet.com/blog/taxes/capital-gains-tax-rates/>long-term capital gains tax rate</a> is 0 percent up to $40,000, and 15 percent from $40,000 to $441,450.
+Then there is the matter of taxation. Where earlier we might have wished to live outside the United States to save on health insurance, now we're saved by taxes. In 2020 the <a href='https://www.nerdwallet.com/blog/taxes/capital-gains-tax-rates/'>long-term capital gains tax rate</a> is 0 percent up to $40,000, and 15 percent from $40,000 to $441,450.
 
 So I need to withdraw 4 percent every year, and end up with $53,600 after taxes. So I need
 
