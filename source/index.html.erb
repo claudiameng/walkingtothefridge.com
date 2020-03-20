@@ -24,7 +24,7 @@ A blog because coronavirus.
   <% end %>
 
   <h2><%= link_to article.title, article %> <span><%= article.date.strftime('%B %e') %></span></h2>
-  <%= article.summary(3000) %>
+  <%= article.summary(2000) %>
   <div style="width: 100%; padding-bottom: 1em">
     <a style="float: right" href="<%= article.url %>">Read more...</a>
   </div>
