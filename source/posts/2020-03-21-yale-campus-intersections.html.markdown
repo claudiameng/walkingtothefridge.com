@@ -12,7 +12,7 @@ They are the best.
 
 They're great for pedestrians and cyclists, and bad for cars (I strongly dislike cars, but that's for a different post). In almost all respects, I'm really happy with them. But there's one thing that I keep thinking of every few weeks.
 
-<img src='/../content/yale_map.png'>
+<img src='/../content/images/yale_map.png'>
 
 I present this screenshot I took of Yale's online map to help explain my issue. I've marked what I'm pretty sure are the six most-walked Barnes Dance intersections by undergraduates at Yale.
 
