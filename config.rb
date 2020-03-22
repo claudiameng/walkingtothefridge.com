@@ -71,15 +71,15 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :asset_hash
-  # activate :favicon_maker, :icons => {
-  # '_favicon_template.png' => [
-  #   { icon: 'apple-touch-icon-57x57.png' },
-  #   { icon: 'apple-touch-icon-precomposed.png', size: '57x57' },
-  #   { icon: 'apple-touch-icon.png', size: '57x57' },
-  #   { icon: 'favicon-32x32.png' },
-  #   { icon: 'favicon-16x16.png' },
-  #   { icon: 'favicon.png', size: '16x16' },
-  #   { icon: 'favicon.ico', size: '64x64,32x32,24x24,16x16' },
-  #   ]
-  # }
+  activate :favicon_maker, :icons => {
+  '_favicon_template.png' => [
+    { icon: 'apple-touch-icon-57x57.png' },
+    { icon: 'apple-touch-icon-precomposed.png', size: '57x57' },
+    { icon: 'apple-touch-icon.png', size: '57x57' },
+    { icon: 'favicon-32x32.png' },
+    { icon: 'favicon-16x16.png' },
+    { icon: 'favicon.png', size: '16x16' },
+    { icon: 'favicon.ico', size: '64x64,32x32,24x24,16x16' },
+    ]
+  }
 end
